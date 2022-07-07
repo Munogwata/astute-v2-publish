@@ -1,0 +1,35 @@
+@use "../../styles/general/breakpoints.scss" as b;
+
+.page-layout{
+    display: flex;
+  justify-items: space-between;
+  justify-content: space-between;
+ margin: 0px;
+    width:b.$desktop-box;
+    background-color: orange;
+   
+}
+
+.full-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content-box{
+    width: 568px;
+    display: flex;
+    background-color: green;
+}
+
+.page-column{
+    width:686px;
+    display: flex;
+}
+
+.screen-column{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}

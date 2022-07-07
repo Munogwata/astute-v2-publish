@@ -3,7 +3,22 @@
 <app-update-bar></app-update-bar>
 
 <app-menu-bar></app-menu-bar>
+<div class="full-page">
+    <div class="page-layout">
+        <div class="page-column">
+            <router-outlet></router-outlet>
+        </div>
 
-<router-outlet></router-outlet>
+        <div class="screen-column">
+            <app-mobile-screen></app-mobile-screen>
+        </div>
+        
+      
+    </div>
+</div>
+
+
+
+
 
 <app-footer></app-footer>

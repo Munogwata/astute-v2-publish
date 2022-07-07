@@ -12,6 +12,7 @@ import { MakeComponent } from './pages/make/make.component';
 import { KeepComponent } from './pages/keep/keep.component';
 import { GrowComponent } from './pages/grow/grow.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { MobileScreenComponent } from './r-components/mobile-screen/mobile-screen.component';
 
 
 
@@ -26,7 +27,8 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
     MakeComponent,
     KeepComponent,
     GrowComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    MobileScreenComponent
 
   ],
   imports: [
