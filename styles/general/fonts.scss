@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+//typeface
+$ibm-plex-sans: 'IBM Plex Sans',
+    sans-serif;
+$montserrat: 'Montserrat',
+    sans-serif;
+$yeseva-one: 'Yeseva One',
+    cursive;
+
+
+
+//font-weights
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+
+//font-sizes
+$small-body-font: 14;
+$default-body-font: 16px;
+$large-body-font: 18px;
+
+
+
+
+//logo text
+@mixin default-logo-text {
+    font-weight: $bold;
+    font-family: $ibm-plex-sans;
+    font-size: 45px;
+    list-height: 58.5px;
+}
+
+
+@mixin small-logo-text {
+    font-weight: $bold;
+    font-family: $ibm-plex-sans;
+    font-size: 30px;
+    list-height: 58.5px;
+}
+
+//links
+
+@mixin default-menu-links {
+    font-family: $yeseva-one;
+    font-size: 28px;
+    list-height: 32.34px;
+}
+
+
+@mixin small-menu-links {
+    font-family: $yeseva-one;
+    font-size: 20px;
+    list-height: 32.34px;
+}
+
+//subheadings
+@mixin subheading-bold {
+    font-family: $ibm-plex-sans;
+    font-weight: $semi-bold;
+    line-height: 26px;
+    font-size: 20px;
+}
+
+
+//body fonts
+
+
+@mixin default-body-bold {
+    font-family: $montserrat;
+    font-weight: $bold;
+    line-height: 19.5px;
+    font-size: 16px;
+}
+
+@mixin default-body-regular {
+    font-family: $montserrat;
+    font-weight: $regular;
+    line-height: 19.5px;
+    font-size: 16px;
+}
+
+
+@mixin small-body-bold {
+    font-family: $montserrat;
+    font-weight: $bold;
+    line-height: 17.07px;
+    font-size: 14px;
+}
+
+@mixin small-body-regular {
+    font-family: $montserrat;
+    font-weight: $regular;
+    line-height: 17.07px;
+    font-size: 14px;
+}
+
+@mixin small-body-bold--underline {
+    font-family: $montserrat;
+    font-weight: $regular;
+    line-height: 17.07px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+//labels
+
+@mixin default-labels {
+    font-family: $ibm-plex-sans;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-weight: $semi-bold;
+}
+
+//tags
+
+@mixin default-tag {
+    font-family: $ibm-plex-sans;
+    font-size: 10px;
+    font-weight: $semi-bold;
+}

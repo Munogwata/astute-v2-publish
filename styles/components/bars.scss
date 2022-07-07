@@ -1,0 +1,171 @@
+@use "../../styles/general/index.scss" as general;
+
+.fundingbar {
+    width: 100%;
+    min-height: 40px;
+    background-color: general.$primary-blue;
+    @include general.default-labels;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: general.$white;
+
+}
+
+.updatebar {
+    background-color: general.$nude;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.updatebar_content {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.update_content-copy {
+    @include general.small-body-regular;
+    color: general.$black;
+    text-align: center;
+    margin-top: general.$small;
+
+}
+
+
+
+.update_heading {
+    @include general.default-body-bold;
+    color: general.$primary-blue;
+    text-align: center;
+
+
+}
+
+.menubar_container {
+    width: 100%;
+    max-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-links_container {
+    width: 1017px;
+    padding-top: general.$small ;
+    padding-bottom: general.$small ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger_menu-container {
+    display: none;
+    flex-direction: column;
+
+
+}
+
+.hamburger-menu {
+    background-color: general.$white;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.hamburger-menu-close {
+    background-color: general.$white;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+
+}
+
+
+
+@media (max-width: 1017px) {
+
+    .menu-links_container {
+        width: 90%;
+    }
+
+    .defaultmenu-links {
+        display: none;
+    }
+
+    .updatebar_content {
+        width: 90%;
+
+    }
+
+    .hamburger_menu-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fundingbar-content {
+        width: 300px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: general.$mobile) {
+
+    .updatebar_content {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fundingbar-content {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: general.$small;
+    }
+
+    .menu-links_container {
+        width: 300px;
+
+    }
+
+
+    .update_content-copy {
+        @include general.small-body-regular;
+        color: general.$black;
+        text-align: center;
+        margin-top: general.$small;
+        margin-bottom: general.$small;
+    }
+
+
+
+    .update_heading {
+        @include general.default-body-bold;
+        color: general.$primary-blue;
+        text-align: center;
+        margin-top: general.$small;
+
+    }
+
+
+
+}

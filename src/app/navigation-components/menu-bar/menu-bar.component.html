@@ -1,0 +1,39 @@
+<div class="menubar_container">
+
+    <span class="menu-links_container">
+        <span class="astute-link">
+            <a routerLink="/about-us" class="default-logo-link">astute</a>
+
+
+        </span>
+
+        <a routerLink="/make" class="defaultmenu-links" routerLinkActive="makeActive">Make</a>
+        <a routerLink="/keep" class="defaultmenu-links" routerLinkActive="keepActive">Keep</a>
+        <a routerLink="/grow" class="defaultmenu-links" routerLinkActive="growActive">Grow</a>
+        <a routerLink="" class="defaultmenu-links" routerLinkActive="homeActive" [routerLinkActiveOptions]="{exact:
+true}">Your Money</a>
+
+
+        <span class="hamburger_menu-container">
+            <button *ngIf='close' class="hamburger-menu" (click)="toggleMenu()">
+                <img src="../../../assets/icons/menu.png" alt="" class="hamburger-icon">
+            </button>
+            <button *ngIf='open' class="hamburger-menu-close" (click)="toggleMenu()">
+                <img src="../../../assets/icons/close.png" alt="" class="hamburger-icon">
+            </button>
+
+            <span *ngIf='open' class="hamburger_menu-links">
+                <a routerLink="/make" class="hamburger-link" routerLinkActive="make-hamburger-link_Active">Make</a>
+                <a routerLink="/keep" class="hamburger-link" routerLinkActive="keep-hamburger-link_Active">Keep</a>
+                <a routerLink="/grow" class="hamburger-link" routerLinkActive="grow-hamburger-link_Active">Grow</a>
+                <a routerLink="" class="hamburger-link" routerLinkActive="home-hamburger-link_Active"
+                    [routerLinkActiveOptions]="{exact:
+true}">Your money</a>
+            </span>
+        </span>
+
+
+
+    </span>
+
+</div>

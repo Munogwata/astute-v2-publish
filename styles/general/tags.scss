@@ -1,0 +1,22 @@
+@use '../../styles/general/colors.scss' as c;
+@use '../../styles/general/breakpoints.scss' as b;
+@use '../../styles/general/fonts' as f;
+
+
+
+
+
+
+.tag {
+    width: 73px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$yellow;
+    border-radius: 5px;
+    margin-bottom: b.$very-tiny;
+    margin-top: b.$very-tiny;
+    @include f.default-tag;
+    color: c.$purple800;
+}

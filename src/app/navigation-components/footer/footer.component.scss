@@ -1,0 +1,88 @@
+@use '../../../../styles/general/index.scss' as general;
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: general.$green800;
+    min-height: 319px;
+
+}
+
+.footerContainer-content {
+    width: 1142px;
+    min-height: 211;
+    display: flex;
+    flex-direction: column
+}
+
+.footer-logo {
+    @include general.small-logo-text;
+    color: white;
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+
+}
+
+.column-rows {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footerContainer-column {
+    display: flex;
+    flex-direction: column;
+    min-height: 167px;
+    align-items: flex-start;
+}
+
+.footer-heading {
+    @include general.subheading-bold;
+    text-decoration: underline;
+    margin-bottom: general.$very-tiny;
+    margin-top: general.$very-tiny;
+    color: general.$white;
+}
+
+.coming-soon-tagContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: general.$tiny;
+}
+
+.mobile-breakpoint {
+    display: none;
+}
+
+
+
+@media (max-width: general.$tablet) {
+
+
+    .column-rows {
+        flex-direction: column;
+    }
+
+    .footerContainer-content {
+        width: 90%;
+
+    }
+
+
+
+
+}
+
+@media (max-width: general.$mobile) {
+
+    .footerContainer-content {
+        width: 300px;
+    }
+
+    .mobile-breakpoint {
+        display: flex;
+    }
+}

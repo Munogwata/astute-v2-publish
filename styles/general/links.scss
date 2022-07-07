@@ -1,0 +1,112 @@
+@use '../../styles/general/colors.scss' as c;
+@use '../../styles/general/fonts.scss' as f;
+@use "../../styles/general/breakpoints.scss" as b;
+
+
+.external-link {
+    text-decoration: underline;
+    color: c.$white;
+    @include f.default-labels;
+    font-weight: f.$bold;
+}
+
+.internal-link--blue {
+    @include f.small-body-bold;
+    color: c.$primary-blue;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.defaultmenu-links {
+    @include f.default-menu-links;
+    color: c.$black;
+    text-decoration: none;
+}
+
+.defaultmenu-links:hover {
+    color: c.$grey600;
+}
+
+.default-logo-link {
+    @include f.default-logo-text;
+    color: black;
+    text-decoration: none;
+}
+
+.default-logo-link:hover {
+    color: c.$primary-blue;
+}
+
+.homeActive {
+    color: c.$primary-blue;
+}
+
+.makeActive {
+    color: c.$purple500;
+}
+
+.keepActive {
+    color: c.$orange800;
+}
+
+.growActive {
+    color: c.$green800
+}
+
+.hamburger-link {
+    @include f.small-menu-links;
+    color: black;
+    text-decoration: none;
+}
+
+.make-hamburger-link_Active {
+    color: c.$purple500;
+
+}
+
+.keep-hamburger-link_Active {
+    color: c.$orange800;
+}
+
+.grow-hamburger-link_Active {
+    color: c.$green800
+}
+
+.home-hamburger-link_Active {
+    color: c.$primary-blue;
+}
+
+.hamburger_menu-links {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-links {
+    color: c.$white;
+    text-decoration: none;
+    @include f.subheading-bold;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: b.$very-tiny;
+    margin-bottom: b.$very-tiny;
+
+}
+
+.footer-links:hover {
+    color: c.$nude;
+}
+
+.footer-links-CS {
+    color: c.$yellow;
+    text-decoration: none;
+    @include f.subheading-bold;
+    display: block;
+    margin-top: b.$very-tiny;
+    margin-bottom: b.$very-tiny;
+}
+
+.footer-links-CS:hover {
+    color: c.$nude;
+}
