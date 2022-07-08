@@ -1,0 +1,70 @@
+
+@use "../../styles/general/index.scss" as general;
+
+
+.screen-content-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 640px;
+  
+
+}
+.heading{
+@include general.subheading-bold-2;
+color: general.$black;
+}
+
+.default-label{
+    @include general.default-body-bold;
+    color: general.$primary-blue;
+    margin-bottom: 8px;
+}
+
+.small-label{
+    @include general.small-body-bold;
+    color: general.$black;
+    margin-bottom: 8px;
+}
+
+.screen-copy{
+    @include general.small-body-regular;
+    color: general.$black;
+}
+
+.screen-copy--underlined{
+    @include general.small-body-regular;
+    color: general.$black;
+    text-decoration: underline;
+    font-weight: general.$bold;
+}
+
+.label-Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-copy_Container{
+    width: 365px;
+    height: 108px;
+    background-color: general.$white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.content-copy_internalContainer{
+    display: flex;
+    width: 336px;
+    height: 74px;
+    flex-direction: column;
+}
+
+.status_box{
+    background-color: rgba(206, 240, 255, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+}

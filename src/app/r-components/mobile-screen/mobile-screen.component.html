@@ -5,14 +5,45 @@
     </span>
 
     <span class="content-box">
-        content
+        <!--home-content-->
+        <span *ngIf="home.isActive">
+            <span class="
+            "> 
+        <app-home-mcontent></app-home-mcontent>
+        </span>
+        </span>
+
+         <!--make-content-->
+         <span *ngIf="make.isActive">
+            <span class="
+            "> 
+        <app-make-mcontent></app-make-mcontent>
+        </span>
+        </span>
+
+          <!--keep-content-->
+          <span *ngIf="keep.isActive">
+            <span class="
+            "> 
+        <app-keep-mcontent></app-keep-mcontent>
+        </span>
+        </span>
+
+              <!--grow-content-->
+              <span *ngIf="grow.isActive">
+                <span class="
+                "> 
+            <app-grow-mcontent></app-grow-mcontent>
+            </span>
+            </span>
+       
     </span>
 
     <span class="mobile-navigation_box">
-        <a routerLink="/make"  class="mobile-link" routerLinkActive="make-mActive"> <span>Make</span></a>
-        <a routerLink="/keep" class="mobile-link" routerLinkActive="keep-mActive"> <span >Keep</span></a>
-        <a routerLink="/grow" class="mobile-link"  routerLinkActive="grow-mActive" > <span >Grow</span></a>
-        <a routerLink="/" class="mobile-link" routerLinkActive="home-mActive" [routerLinkActiveOptions]="{exact:
+        <a routerLink="/make"  class="mobile-link" routerLinkActive="make-mActive" #make='routerLinkActive'> <span>Make</span></a>
+        <a routerLink="/keep" class="mobile-link" routerLinkActive="keep-mActive" #keep='routerLinkActive'> <span >Keep</span></a>
+        <a routerLink="/grow" class="mobile-link"  routerLinkActive="grow-mActive" #grow='routerLinkActive' > <span >Grow</span></a>
+        <a routerLink="/" class="mobile-link" routerLinkActive="home-mActive"  #home='routerLinkActive' [routerLinkActiveOptions]="{exact:
             true}"> <span>Your Money</span></a>
     
     

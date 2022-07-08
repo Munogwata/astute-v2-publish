@@ -13,6 +13,10 @@ import { KeepComponent } from './pages/keep/keep.component';
 import { GrowComponent } from './pages/grow/grow.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { MobileScreenComponent } from './r-components/mobile-screen/mobile-screen.component';
+import { HomeMcontentComponent } from './r-components/home-mcontent/home-mcontent.component';
+import { MakeMcontentComponent } from './r-components/make-mcontent/make-mcontent.component';
+import { GrowMcontentComponent } from './r-components/grow-mcontent/grow-mcontent.component';
+import { KeepMcontentComponent } from './r-components/keep-mcontent/keep-mcontent.component';
 
 
 
@@ -28,7 +32,11 @@ import { MobileScreenComponent } from './r-components/mobile-screen/mobile-scree
     KeepComponent,
     GrowComponent,
     AboutUsComponent,
-    MobileScreenComponent
+    MobileScreenComponent,
+    HomeMcontentComponent,
+    MakeMcontentComponent,
+    GrowMcontentComponent,
+    KeepMcontentComponent
 
   ],
   imports: [

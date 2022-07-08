@@ -64,7 +64,12 @@ $large-body-font: 18px;
     font-size: 20px;
 }
 
-
+@mixin subheading-bold-2{
+    font-family: $montserrat;
+    font-weight: $bold;
+    line-height: 21.94px;
+    font-size: 18px;
+}
 
 
 //body fonts
