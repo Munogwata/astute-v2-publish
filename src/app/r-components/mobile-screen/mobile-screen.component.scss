@@ -65,20 +65,39 @@
 
 }
 
+.sign-bar_icon{
+    width: 345px;
+    height: 20px;
+    object-fit: contain;
+    margin-top: 21px; 
+}
+
 
 }
 
 @media (max-width: general.$mobile) {
     
 
-    .content-box{
+    .mobile-framework{
         width: 273.09px;
         height: 591px;
+    }
+
+    .content-box{
+        width: 238px;
+        height: 433px;
     }
     
     .mobile-navigation_box{
         margin-top: 56.05px;
         height: 68px;
     
+    }
+
+    .sign-bar_icon{
+        width: 229px;
+        height: 20px;
+        object-fit: contain;
+        margin-top: 21px; 
     }
 }

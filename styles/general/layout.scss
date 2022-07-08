@@ -2,6 +2,7 @@
 
 .page-layout{
     display: flex;
+    flex-direction: row;
   justify-items: space-between;
   justify-content: space-between;
  margin: 0px;
@@ -33,5 +34,38 @@
 .screen-column{
     width: 450px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+@media (max-width: b.$tablet ) {
+    .page-layout{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .screen-column{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: b.$mobile ) {
+    .page-layout{
+        display: flex;
+        flex-direction: column;
+        width: b.$mobile;
+        align-items: center;
+        align-content: center;
+        background-color: lime;
+    }
+
+    .screen-column{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }

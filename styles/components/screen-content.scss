@@ -68,3 +68,82 @@ color: general.$black;
     align-items: center;
     height: 49px;
 }
+
+
+@media (max-width: general.$tablet) {
+
+
+    
+}
+
+
+//the mobile responsiveness
+
+@media (max-width: general.$mobile) {
+   
+   
+   
+    .default-label{
+        @include general.default-body-bold;
+       font-size: 10.55px;
+    }
+    
+    .small-label{
+        @include general.small-body-bold;
+     font-size: 11.26px;
+    }
+    
+    .screen-copy{
+        @include general.small-body-regular;
+        color: general.$black;
+        font-size: 9.23px;
+    }
+    
+    .screen-copy--underlined{
+        @include general.small-body-regular;
+        color: general.$black;
+        text-decoration: underline;
+        font-weight: general.$bold;
+        font-size: 9.23px;
+    }
+    
+    .label-Container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content-copy_Container{
+        width: 240.75px;
+        height: 71.24px;
+        background-color: general.$white;
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .content-copy_internalContainer{
+        display: flex;
+        width: 336px;
+        height: 74px;
+        flex-direction: column;
+    }
+    
+   
+   
+    .screen-content-Container{
+       width: 238px;
+       height: 433px;
+   } 
+
+   .status_box{
+    background-color: rgba(206, 240, 255, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32.32px;
+}
+
+
+
+}
