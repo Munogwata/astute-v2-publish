@@ -41,3 +41,44 @@
     align-content: center;
     align-items: center;
 }
+
+@media (max-width: general.$tablet) {
+    .mobile-framework{
+        width: 405.71px;
+         height: 878px;
+
+    }
+
+
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    width: 355px;
+    height: 625px;
+}
+
+.mobile-navigation_box{
+    margin-top: 56.05px;
+    height: 100px;
+
+}
+
+
+}
+
+@media (max-width: general.$mobile) {
+    
+
+    .content-box{
+        width: 273.09px;
+        height: 591px;
+    }
+    
+    .mobile-navigation_box{
+        margin-top: 56.05px;
+        height: 68px;
+    
+    }
+}
