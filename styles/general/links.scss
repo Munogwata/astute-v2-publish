@@ -3,6 +3,32 @@
 @use "../../styles/general/breakpoints.scss" as b;
 
 
+a{
+    color: c.$black;
+    text-decoration: none;
+    display: inline-block;
+   padding-bottom: 5px;
+    position: relative;
+}
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    //left: 50%;
+    position: absolute;
+    background:  c.$black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 50%; 
+    left: 25%; 
+  }
+
+
 .external-link {
     text-decoration: underline;
     color: c.$white;
@@ -110,3 +136,35 @@
 .footer-links-CS:hover {
     color: c.$nude;
 }
+
+.mobile-link{
+    @include f.small-body-bold;
+    color: c.$black;
+}
+
+
+.make-mActive{
+    @include f.small-body-bold;
+    color: c.$purple500;
+    text-decoration: underline;
+}
+
+.keep-mActive{
+    @include f.small-body-bold;
+    color: c.$orange800;
+    text-decoration: underline;
+}
+
+.grow-mActive{
+    @include f.small-body-bold;
+    color: c.$green800;
+    text-decoration: underline;
+}
+
+.home-mActive{
+    @include f.small-body-bold;
+    color: c.$primary-blue;
+    text-decoration: underline;
+}
+
+
