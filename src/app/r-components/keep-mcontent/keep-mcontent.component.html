@@ -27,8 +27,125 @@
         </button>
     </div>
 
+    <!--savings content-->
+
     <div *ngIf='savingsOpen' class="savings-content">
-        save
+        <span class="savings-contentBox">
+
+            <span class="card-container">
+                <span class="card-heading">Saving Goal</span>
+                <span class="card-goal">
+                   $500 000 in 96 months ( 8 years)
+                </span>
+            </span>
+          
+        </span>
+
+
+<span class="card-summary">
+    We have considered your current earnings and have devised the following savings plans for you. Select the saving plan that you perfer the most.
+</span>
+
+
+<!--reusable code-->
+<span class="fixed-tabsContainer">
+<span class="orangeTab">
+    Recommended
+</span>
+<span class="neonTab">
+   Conservative
+</span>
+<span class="neonTab">
+    Aggressive
+ </span>
+</span>
+
+<!--goals card-->
+<span class="goalCard">
+
+    <span class="card_goalContainer">
+        <span class="card_heading-Container">
+      
+            <span class="small-label regular">
+                Catergory
+            </span>
+
+            <span class="default-label keep">
+                Retirement
+            </span>
+     
+      
+    </span>
+
+
+    <span class="card_heading-Container">
+        <span class="small-label regular">
+            Short description
+        </span>
+        <span class="default-label black">
+            Build savings for my retirement
+        </span>
+    </span>
+    </span>
+
+    <span class="card_heading-Container">
+        <!--the first row of items-->
+        <span class="cardRow">
+            <span class="label-item">
+<span class="small-label regular">
+    Short description
+</span>
+<span class="default-label black">
+    $250 000
+</span>
+            </span>
+            <span class="label-item">
+                <span class="small-label regular">
+                    Target amount
+                </span>
+                <span class="default-label black">
+                    $500 000
+                </span>
+            </span>
+        </span>
+
+               <!--the second row of items-->
+               <span class="cardRow">
+                <span class="label-item">
+    <span class="small-label regular">
+        Monthly savings
+    </span>
+    <span class="default-label black">
+        $2605.00
+    </span>
+                </span>
+                <span class="label-item">
+                    <span class="small-label regular">
+                        Finish date
+                    </span>
+                    <span class="default-label black">
+                        23/06/2030
+                    </span>
+                </span>
+            </span>
+       
+    </span>
+    <span class="card-ButtonRow">
+<span class="raised-roundButton">
+    <img src="../../../assets/icons/add.svg" alt="" class="button-icon">
+</span>
+
+
+    </span>
+
+   
+
+
+</span>
+
+<!--outside of the goal card-->
+
+
     </div>
 
     <div  *ngIf='debtOpen' class="savings-content">

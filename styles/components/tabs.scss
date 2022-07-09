@@ -14,10 +14,28 @@
     border: none;
 }
 
+@mixin fixedTab{
+    width: fit-content;
+    height:32px;
+    @include general.default-button-text;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius:8px ;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 10px;
+}
+
 
 .tab-Container {
     display: flex;
     width: 100%;
+}
+
+.fixed-tabsContainer{
+    display: flex
 }
 
 .activeTab {
@@ -31,12 +49,33 @@
     border: 1px solid general.$green800;
 }
 
+
+.orangeTab{
+    @include fixedTab;
+    background-color: general.$orange200;
+    color: general.$orange800;
+}
+
+.neonTab{
+    @include fixedTab;
+    background-color: general.$green200;
+    color: general.$green800;
+}
+
+
+
+
+
 @media (max-width: general.$mobile) {
 
     @mixin tab{
         width: 63.99px;
         height: 25.91px;
         padding: 4px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 13.43px;
        
     }
 
@@ -49,5 +88,30 @@
         @include tab;
       
     }
+
+    @mixin fixedTab{
+        width: 77.46px;
+        height:22.06px;
+        border-radius: 5.37px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 9.4px;
+        line-height: 13.43px;
+        
+    }
+
+    .orangeTab{
+        @include fixedTab;
+        background-color: general.$orange200;
+        color: general.$orange800;
+    }
+    
+    .neonTab{
+        @include fixedTab;
+        background-color: general.$green200;
+        color: general.$green800;
+    }
+    
+    
     
 }
