@@ -1,0 +1,9 @@
+@use '../../../../styles/general/index.scss' as general;
+@use '../../../../styles/components/screen-content.scss';
+@use '../../../../styles/components/button.scss';
+
+
+.label-box{
+    display: flex;
+    flex-direction: column;
+}

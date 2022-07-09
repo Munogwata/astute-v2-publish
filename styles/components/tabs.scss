@@ -26,6 +26,7 @@
     @include general.default-button-text;
     margin-right: 10px;
     border: none;
+    cursor: pointer;
 }
 
 @mixin fixedTab{
