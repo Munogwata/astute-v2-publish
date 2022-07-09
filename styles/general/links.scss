@@ -168,3 +168,45 @@ a:after {
 }
 
 
+@media (max-width: b.$mobile) {
+   
+    .mobile-link{
+        @include f.small-body-bold;
+        color: c.$black;
+        font-size: 9.23px;
+        line-height: 11.26px;
+    }
+
+
+.make-mActive{
+    @include f.small-body-bold;
+    color: c.$purple500;
+    text-decoration: underline;
+    font-size: 9.23px;
+    line-height: 11.26px;
+}
+
+.keep-mActive{
+    @include f.small-body-bold;
+    color: c.$orange800;
+    text-decoration: underline;
+    font-size: 9.23px;
+    line-height: 11.26px;
+}
+
+.grow-mActive{
+    @include f.small-body-bold;
+    color: c.$green800;
+    text-decoration: underline;
+    font-size: 9.23px;
+    line-height: 11.26px;
+}
+
+.home-mActive{
+    @include f.small-body-bold;
+    color: c.$primary-blue;
+    text-decoration: underline;
+    font-size: 9.23px;
+    line-height: 11.26px;
+}
+}

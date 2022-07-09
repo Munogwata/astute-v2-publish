@@ -57,10 +57,10 @@
     .page-layout{
         display: flex;
         flex-direction: column;
-        width: b.$mobile;
+        width:100%;
         align-items: center;
         align-content: center;
-        background-color: lime;
+        //background-color: lime;
     }
 
     .screen-column{
