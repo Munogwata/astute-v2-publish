@@ -16,7 +16,7 @@
     </div>
 
     <div class="tab-Container">
-        <button *ngIf="savingsOpen" class="activeTab" (click)="toggleSaveOpen()">Savings</button>
+        <button *ngIf="savingsOpen" class="activeTab " (click)="toggleSaveOpen()">Savings</button>
         <button *ngIf="savingsClose" class="nonActiveTab" (click)="toggleSaveClose()">Savings</button>
         
         <button *ngIf="debtOpen" class="activeTab" (click)="toggleDebtOpen()">
@@ -148,7 +148,114 @@
 
     </div>
 
-    <div  *ngIf='debtOpen' class="savings-content">
-        debt
+    <!--debt items-->
+
+    <div  *ngIf='debtOpen' class="debt-content">
+        <span class="debt-contentBox">
+
+            <span class="debt-card-container">
+                <span class="card-heading">Your priority debt</span>
+                <span class="card-goal">
+                   $500 000 in 96 months ( 8 years)
+                </span>
+                <span class="screen-copy">
+                    Amount owed: ZAR 18 000
+                </span>
+            </span>
+
+         
+          
+        </span>
+
+        <span class="card-summary">
+            You have selected Golden Credit Card as the debt you wish to pay off first, and ahead of schedule. We have considered your current earnings and have curated the following debt plans for you. 
+        </span>
+<!--reusable code-->
+<span class="fixed-tabsContainer">
+    <span class="orangeTab">
+        Recommended
+    </span>
+    <span class="neonTab">
+       Conservative
+    </span>
+    <span class="neonTab">
+        Aggressive
+     </span>
+    </span>
+
+    <!--debt card-->
+
+<span class="goalCard-debt">
+    <span>
+        
+
+    </span>
+
+    <span class="card_goalContainer">
+        <span class="card_heading-Container">
+      
+            <span class="small-label regular">
+                Catergory
+            </span>
+
+            <span class="default-label keep">
+            Debt - Personal debt
+            </span>
+      
+    </span>
+
+    <span class="card_heading-Container">
+        <!--the first row of items-->
+        <span class="debt-cardRow">
+            <span class="label-item">
+<span class="small-label regular">
+    Short description
+</span>
+<span class="default-label space  black">
+    $250 000
+</span>
+            </span>
+            
+        </span>
+        <!--the first row of items-->
+        <span class="debt-cardRow">
+            <span class="label-item">
+<span class="small-label   regular">
+    Short description
+</span>
+<span class="default-label space black">
+    $250 000
+</span>
+            </span>
+            
+        </span>
+
+       
+       
+    </span>
+
+    <span class="card-ButtonRow">
+        <span class="raised-roundButton">
+            <img src="../../../assets/icons/add.svg" alt="" class="button-icon">
+        </span>
+        
+        
+            </span>
+
+
+   
+    </span>
+
+    
+   
+
+   
+
+
+</span>
+
+
     </div>
+
+
 </div>

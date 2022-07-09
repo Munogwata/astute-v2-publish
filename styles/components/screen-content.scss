@@ -172,6 +172,50 @@ color: general.$orange800;
     width: 50%;
 }
 
+.debt-contentBox{
+    width: 366px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 8px;
+ margin-top: 16px;
+    background-color: general.$orange200;
+    border-radius: 5px;
+    border: 1px solid general.$orange800;
+}
+
+.goalCard-debt{
+    margin-top:16px ;
+        width:366px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        background-color: general.$white;
+        box-shadow: 0px 2px 8px rgba(24, 24, 22, 0.2);
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 16px;
+        padding-top: 16px;
+}
+
+
+.debt-card-container{
+    width: 337px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+ 
+        }
+
+        .debt-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
 //the tablet responsiveness
 
 @media (max-width: general.$tablet) {
@@ -179,6 +223,11 @@ color: general.$orange800;
 .goalCard{
     width: 357.67px;
     height: fit-content;
+}
+
+.goalCard-debt{
+    width: 357.67px;
+    height: fit-content
 }
 
 .card_heading-Container{
@@ -259,6 +308,16 @@ justify-content: center;
         align-items: center;
     }
     
+
+  
+
+    .debt-card-container{
+width: 221.67px;
+height: fit-content;
+display: flex;
+flex-direction: column;
+
+    }
    
    
     .screen-content-Container{
@@ -301,12 +360,19 @@ justify-content: center;
     
 }
 
+
+
 .goalCard{
     width:241px ;
     height: 155px;
     //background-color: red;
 }
 
+.goalCard-debt{
+    margin-top: 16px;
+    width:241px ;
+    height: 120px;
+}
 .card_goalContainer{
     width: 212px;
     height:fit-content;
@@ -323,4 +389,19 @@ justify-content: center;
     margin-top: 8px;
 }
 
+.debt-cardRow{
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+}
+
+.debt{
+    padding: 0px;
+    margin: 0px;
+}
+
+.space{
+    display: flex;
+    margin-bottom: 8px;
+}
 }
