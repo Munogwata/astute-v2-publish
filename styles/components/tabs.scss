@@ -1,0 +1,53 @@
+@use '../../styles/general/index.scss'as general;
+
+
+@mixin tab {
+    width: 98px;
+    height: 40px;
+    border-radius: 100px;
+    color: general.$green800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include general.default-button-text;
+    margin-right: 10px;
+    border: none;
+}
+
+
+.tab-Container {
+    display: flex;
+    width: 100%;
+}
+
+.activeTab {
+    @include tab;
+    background-color: general.$green200;
+}
+
+.nonActiveTab{
+    @include tab;
+    background-color: general.$nude;
+    border: 1px solid general.$green800;
+}
+
+@media (max-width: general.$mobile) {
+
+    @mixin tab{
+        width: 63.99px;
+        height: 25.91px;
+        padding: 4px;
+       
+    }
+
+    .activeTab {
+        @include tab;
+
+    }
+    
+    .nonActiveTab{
+        @include tab;
+      
+    }
+    
+}

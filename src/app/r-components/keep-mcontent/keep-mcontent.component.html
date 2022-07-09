@@ -16,9 +16,22 @@
     </div>
 
     <div class="tab-Container">
-        <span class="activeTab">Savings</span>
-        <span class="nonActiveTab">
+        <button *ngIf="savingsOpen" class="activeTab" (click)="toggleSaveOpen()">Savings</button>
+        <button *ngIf="savingsClose" class="nonActiveTab" (click)="toggleSaveClose()">Savings</button>
+        
+        <button *ngIf="debtOpen" class="activeTab" (click)="toggleDebtOpen()">
             Debt
-        </span>
+        </button>
+        <button *ngIf="debtClose" class="nonActiveTab" (click)="toggleDebtClose()">
+            Debt
+        </button>
+    </div>
+
+    <div *ngIf='savingsOpen' class="savings-content">
+        save
+    </div>
+
+    <div  *ngIf='debtOpen' class="savings-content">
+        debt
     </div>
 </div>
