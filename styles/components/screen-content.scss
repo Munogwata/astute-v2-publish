@@ -294,6 +294,96 @@ color: general.$orange800;
     justify-content: space-between;
 }
 
+.grow{
+    color: general.$green800;
+}
+
+.neon{
+    color: general.$green200;
+}
+
+.investment-Card{
+    width:365px;
+    height: 274px;
+    display: flex;
+    background: rgba(207, 248, 80, 0.45);
+    color: general.$black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.portfolio-Card{
+    width: 365px;
+    height: 90px;
+    display: flex;
+    border-radius: 5px;
+    background-color: general.$green800;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.portfolio-row{
+    display: flex;
+    justify-content: flex-start;
+    width: 320px;
+    align-items: flex-start;
+    align-content: flex-start;
+ 
+}
+.portfolio-row--center{
+    display: flex;
+    justify-content: center;
+    width: 320px;
+}
+.portfolio-row--end{
+    display: flex;
+    justify-content: flex-end;
+    width: 320px;
+}
+.portfolio-row--sb{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+
+.internal-investmentCard{
+    width: 320px;
+    height:247px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.card-fontLarge{
+    font-family: general.$yeseva-one;
+    font-size: 36px;
+    line-height: 41.58px;
+    font-weight: general.$regular;
+}
+
+
+.icon-round{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.icon-rightArrow{
+    width: 20px;
+    height: 16px;
+    margin-right: 8px;
+}
+.item-label-row{
+    display: flex;
+
+}
+
+.white{
+    color: general.$white;
+}
 
 //the tablet responsiveness
 
@@ -401,9 +491,44 @@ color: general.$orange800;
 width: 240.75px;
 margin-top: 8px;
 margin-bottom: 8px;
-
-
 }    
+
+.investment-Card{
+    width:240.75px;
+    height: 175px;
+    display: flex;
+    background: rgba(207, 248, 80, 0.45);
+    color: general.$black;
+}
+
+.internal-investmentCard{
+    width: 220px;
+    height:155px;
+    display: flex;
+
+}
+
+.portfolio-Card{
+    width:240.75px;
+    height: 55px;
+    display: flex;
+    border-radius: 5px;
+    background-color: general.$green800;
+    flex-direction: column;
+}
+
+.portfolio-row{
+    display: flex;
+    justify-content: flex-start;
+    width: 220px;
+}
+
+.portfolio-row--center{
+    display: flex;
+    justify-content: center;
+    width: 220px;
+
+}
 
 .makeCard-row{
     width: 220px;
@@ -528,5 +653,49 @@ flex-direction: column;
 .black{
     color:general.$black
 }
+
+.grow{
+    color: general.$green800;
+}
+
+.regular{
+    font-weight: general.$regular;
+}
+
+.card-fontLarge{
+    font-family: general.$yeseva-one;
+    font-size: 16px;
+    line-height: 41.58px;
+    font-weight: general.$regular;
+}
+
+
+.icon-round{
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.portfolio-row--end{
+    display: flex;
+    justify-content: flex-end;
+    width: 220px;
+}
+
+.portfolio-row--sb{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.white{
+    color: general.$white;
+}
+
+.neon{
+    color: general.$green200;
+    margin-top: 4px;
+}
+
 
 }
