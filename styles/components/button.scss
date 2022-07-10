@@ -125,5 +125,27 @@
         height: 12px;
         object-fit: contain;
     }
+
+
+    .money-plan-button{
+        width: fit-content;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 25px;
+        background-color: general.$green200;
+        border-radius:100px;
+        border: none;
+    
+    }
+    
+    .button-label--mp{
+        padding-left: 4px;
+        padding-right: 4px;
+        @include general.default-button-text;
+        color: general.$green800;
+        font-size: 9.23px;
+        line-height: 11.26px;
+    }
     
 }
