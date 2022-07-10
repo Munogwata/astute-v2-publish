@@ -322,6 +322,7 @@ color: general.$orange800;
     justify-content: center;
     align-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .portfolio-row{
@@ -378,6 +379,7 @@ color: general.$orange800;
 }
 .item-label-row{
     display: flex;
+   
 
 }
 
