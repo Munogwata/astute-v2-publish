@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MakeMcontentComponent implements OnInit {
 
+  homeMake = true;
+  recMake = false;
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  toggleBack(){
+    this.homeMake =! this.homeMake
+    this.recMake =! this.recMake
+  }
+
+
+  toggleAdvise(){
+    this.homeMake =! this.homeMake
+    this.recMake =! this.recMake
+  }
 }

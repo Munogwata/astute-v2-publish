@@ -1,9 +1,76 @@
-<div class="screen-content-Container">
+
+
+
+<div *ngIf='homeMake' class="screen-content-Container">
+
+    <div class="makehome-screen">
+        <div class="heading make">
+            Your money plan
+        </div>
+    
+        <span class="heading black">
+            Career as your main source of income:
+        </span>
+
+        <span class="checkbox">
+            <span class="check-row">
+    
+                <img src="../../../assets/icons/Checkbox_selected.png" alt="" class="checkbox-icon">
+                <span class="content-section--bold">
+                  My career
+                </span>
+        
+            </span>
+    
+            <span class="check-row">
+        
+                <img src="../../../assets/icons/Checkbox.png" alt="" class="checkbox-icon">
+                <span class="content-section--bold">
+                    Passive income (example investments in the 
+                    stock market)
+                </span>
+        
+            </span>
+    
+    
+            <span class="check-row">
+        
+                <img src="../../../assets/icons/Checkbox.png" alt="" class="checkbox-icon">
+                <span class="content-section--bold">
+                    My business or businesses
+                </span>
+        
+            </span>
+        </span>
+    
+     
+    
+    
+    
+    
+        <span class="button-row">
+            <button class="money-plan-button">
+    
+                <span class="button-label--mp">
+                    Build your money plan
+                </span>
+                
+            </button>
+        </span>
+        
+    </div>
+   
+</div>
+
+
+<!--the recomendation screen-->
+
+<div *ngIf='recMake' class="screen-content-Container">
 
 <div class="bb-row">
     <img src="../../../assets/icons/arrow.png" alt="" class="arrow-icon">
 
-    <button class="small-label bb-button">
+    <button class="small-label bb-button" (click)="toggleBack()">
         Back
     </button>
 </div>
