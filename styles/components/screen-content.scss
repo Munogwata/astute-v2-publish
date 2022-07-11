@@ -389,6 +389,10 @@ color: general.$orange800;
     color: general.$white;
 }
 
+.keep{
+    color: general.$orange800;
+}
+
 //the tablet responsiveness
 
 @media (max-width: general.$tablet) {
@@ -406,6 +410,13 @@ color: general.$orange800;
 .card_heading-Container{
     width: 338.52px;
     height: fit-content;
+}
+
+.make{
+    color: general.$purple500;
+}
+.keep{
+    color: general.$orange800;
 }
 
     
@@ -650,7 +661,7 @@ flex-direction: column;
 }
 
 .heading{
-    color: general.$purple500;
+    color: general.$black;
     margin-top: 8px;
 }
 
@@ -699,6 +710,19 @@ flex-direction: column;
 .neon{
     color: general.$green200;
     margin-top: 4px;
+}
+
+.make{
+    color: general.$purple500;
+}
+
+.keep{
+    color: general.$orange800;
+}
+
+
+.black{
+    color: general.$black;
 }
 
 
