@@ -1,0 +1,79 @@
+@use "../../../../styles/components/button.scss";
+@use "../../../../styles/general/index.scss" as general;
+
+
+.download-frame{
+    width: 568px;
+    height: 285px;
+    background-color: general.$white;
+    border-radius: 10px;
+    border: 1px solid general.$black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.download-content{
+    display: flex;
+    width: 516px;
+    height: 158.57px;
+    justify-content: space-between;
+
+
+    flex-direction: column;
+}
+
+.launch-date{
+    @include general.subheading-bold;
+}
+
+.launch-CTA{
+    @include general.subheading-bold-2;
+}
+
+.launch-copy{
+    @include general.small-body-regular;
+}
+
+
+@media (max-width: general.$tablet) {
+
+    .download-frame{
+        width: 314.89px;
+        height: 203.76px;
+        border-radius: 5.54px;
+    }
+
+    .download-content{
+        display: flex;
+        width: 244px;
+        height: 98px;
+    }
+
+    .launch-date{
+        @include general.subheading-bold;
+        font-size: 16px
+    }
+    
+    .launch-CTA{
+        @include general.subheading-bold-2;
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: general.$mobile) {
+    .download-frame{
+        width: 310px;
+        height: 155.55px;
+        border-radius: 5.46px;
+    }
+
+    .download-content{
+        display: flex;
+        width: 244px;
+        height: 125px;
+    }
+}

@@ -96,12 +96,35 @@
     justify-content: center;
 }
 
+.launch-buttonRow{
+   width: 345px; 
+   display: flex;
+   justify-content: space-between;
+}
+
+.download-button{
+    width:164px;
+    height: 47.38px;
+    object-fit: contain;
+}
+
 @media (max-width:general.$tablet){
 
     .card-ButtonRow{
-        width: 338.52px
+        width: 338.52px;
+        display: flex;
+        justify-content: space-between;
     }
 
+    .launch-buttonRow{
+        width: 232px; 
+     }
+     
+     .download-button{
+        width:112.57px;
+        height: 32.52px;
+        object-fit: contain;
+    }
 
 }
 
@@ -146,6 +169,15 @@
         color: general.$green800;
         font-size: 9.23px;
         line-height: 11.26px;
+    }
+
+    .launch-buttonRow{
+        width: 198.96px; 
+     }
+
+     .download-button{
+        width:96.53px;
+        height: 27.89px;
     }
     
 }

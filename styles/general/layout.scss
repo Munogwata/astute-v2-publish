@@ -7,7 +7,7 @@
   justify-content: space-between;
  margin: 0px;
     width:b.$desktop-box;
-    background-color: orange;
+
     margin-top: 72px;
     margin-bottom: 72px;
    
@@ -37,12 +37,32 @@
     justify-content: flex-end;
 }
 
+.show-d-t{
+    display: flex;
+}
+
+.show-m{
+    display: none;
+}
+
 @media (max-width: b.$tablet ) {
     .page-layout{
         flex-direction: column;
         width: 100%;
         align-items: center;
         align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .page-column{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    
     }
 
     .screen-column{
@@ -60,12 +80,38 @@
         width:100%;
         align-items: center;
         align-content: center;
-        //background-color: lime;
+        justify-content: center;
+        justify-items: center;
+     
+    }
+
+    .page-column{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+ 
     }
 
     .screen-column{
-        width: 100%;
         display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        align-content: center;
         justify-content: center;
+        justify-items: center;
+    
     }
+    .show-d-t{
+        display: none;
+    }
+
+    .show-m{
+        display: flex;
+        margin-top: b.$default;
+    }
+    
 }

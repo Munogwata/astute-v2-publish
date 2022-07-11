@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GrowComponent implements OnInit {
 
+  
+  classC='orange'
+  
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }
