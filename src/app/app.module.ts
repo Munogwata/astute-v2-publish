@@ -18,6 +18,7 @@ import { MakeMcontentComponent } from './r-components/make-mcontent/make-mconten
 import { GrowMcontentComponent } from './r-components/grow-mcontent/grow-mcontent.component';
 import { KeepMcontentComponent } from './r-components/keep-mcontent/keep-mcontent.component';
 import { DownloadBoxComponent } from './r-components/download-box/download-box.component';
+import { MoreDetailsComponent } from './pages/more-details/more-details.component';
 
 
 
@@ -38,7 +39,8 @@ import { DownloadBoxComponent } from './r-components/download-box/download-box.c
     MakeMcontentComponent,
     GrowMcontentComponent,
     KeepMcontentComponent,
-    DownloadBoxComponent
+    DownloadBoxComponent,
+    MoreDetailsComponent
 
   ],
   imports: [

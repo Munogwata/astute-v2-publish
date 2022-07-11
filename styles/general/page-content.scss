@@ -1,0 +1,156 @@
+@use "../../styles/general/colors.scss" as c;
+@use "../../styles/general/fonts.scss" as f;
+@use "../../styles/general/breakpoints.scss" as b;
+
+
+.copy-container{
+    width: 569px;
+ display: flex;
+    flex-direction: column;
+   
+}
+
+
+.tag-content{
+    @include f.subheading-bold;
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.page-copy{
+    @include f.default-body-regular;
+    margin-bottom: 8px;
+}
+
+.page-copy-emphasised{
+    @include f.default-menu-links;
+    margin-bottom: 8px;
+
+}
+
+.community-row{
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.social-icon{
+    width:30px ;
+height: 30px;
+object-fit: contain;
+margin-right: 8px;
+}
+
+.make{
+    color: c.$purple500;
+}
+
+.keep{
+    color: c.$orange800;
+}
+.grow{
+    color: c.$green800;
+}
+
+.default{
+    color: c.$primary-blue;
+}
+
+@media (max-width: b.$tablet) {
+    .tag-content{
+        @include f.subheading-bold;
+        font-size: 16px;
+    }
+    
+    .copy-container{
+        width: 320.75px;
+        display: flex;
+        margin-bottom: b.$default
+    }
+
+    .social-icon{
+        width:25px ;
+    height: 25px;
+    object-fit: contain;
+    margin-right: 8px;
+    }
+    
+    
+
+
+    .page-copy{
+        @include f.small-body-regular;
+        font-size: 14px;
+    }
+
+    .page-copy-emphasised{
+        @include f.default-menu-links;
+        font-size: 20px;
+    }
+    .make{
+        color: c.$purple500;
+    }
+    .keep{
+        color: c.$orange800;
+    }
+
+    .grow{
+        color: c.$green800;
+    }
+    .default{
+        color: c.$primary-blue;
+    }
+    
+}
+
+
+@media (max-width: b.$mobile) {
+    
+    .copy-container{
+        width:314.96px;
+        display: flex;
+        margin-bottom: b.$default
+    }
+    
+    .tag-content{
+        @include f.subheading-bold;
+        font-size: 14px;
+        margin-bottom: 8px;
+    
+    }
+
+    .page-copy{
+        @include f.small-body-regular
+    }
+    .page-copy-emphasised{
+        @include f.default-menu-links;
+        font-size: 20px
+    
+    }
+
+    .social-icon{
+        width:25px ;
+    height: 25px;
+    object-fit: contain;
+    margin-right: 8px;
+    }
+    
+    .make{
+        color: c.$purple500;
+    }
+    .keep{
+        color: c.$orange800;
+    }
+    .grow{
+        color: c.$green800;
+    }
+    .default{
+        color: c.$primary-blue;
+    }
+
+    .content-container{
+        width: 80%;
+    }
+}
+
+
+

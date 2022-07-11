@@ -1,0 +1,20 @@
+@use "../../../../styles/general/index.scss" as general;
+
+
+.external-link{
+    color: black;
+    @include general.subheading-bold;
+    text-decoration: none;
+
+}
+
+.external-link:hover{
+    color: general.$primary-blue;
+}
+
+.justify{
+    text-align: justify;
+    margin-bottom: 16px;
+    display: block;
+   
+}

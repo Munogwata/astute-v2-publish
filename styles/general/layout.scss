@@ -29,6 +29,7 @@
 .page-column{
     width:686px;
     display: flex;
+    flex-direction: column;
 }
 
 .screen-column{
@@ -39,10 +40,13 @@
 
 .show-d-t{
     display: flex;
+    flex-direction: column;
 }
 
 .show-m{
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: b.$tablet ) {
